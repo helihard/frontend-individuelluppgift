@@ -1,0 +1,23 @@
+aside {
+  position: sticky;
+  top: 10rem;
+  margin-top: 4rem;
+  z-index: 3000;
+  padding-bottom: 1rem;
+}
+
+#aside_news {
+  min-width: min-content;
+  padding: var(--padding);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+/* mobilanpassad struktur och layout */
+@media screen and (max-width: 480px) {
+  aside {
+    top: 6rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

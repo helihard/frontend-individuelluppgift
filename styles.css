@@ -79,17 +79,6 @@ main > article {
 }
 /* slut placeholder-content */
 
-aside {
-  position: sticky;
-  top: 10rem;
-  margin-top: 4rem;
-  min-width: min-content;
-  z-index: 3000;
-  padding: var(--padding);
-  border: var(--border);
-  border-radius: var(--border-radius);
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -104,12 +93,6 @@ footer {
   #container {
     flex-direction: column-reverse;
     gap: 0;
-  }
-
-  aside {
-    top: 6rem;
-    margin: 0 auto;
-    width: 100%;
   }
 
   main {
