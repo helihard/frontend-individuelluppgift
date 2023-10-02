@@ -10,6 +10,7 @@ aside {
   min-width: min-content;
   border: var(--border);
   border-radius: var(--border-radius);
+  font-family: var(--body_font);
 }
 
 input {
