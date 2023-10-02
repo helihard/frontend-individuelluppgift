@@ -98,3 +98,22 @@ footer {
   padding: var(--padding);
   border-radius: var(--border-radius);
 }
+
+/* mobilanpassad struktur och layout */
+@media screen and (max-width: 480px) {
+  #container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  aside {
+    top: 6rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
