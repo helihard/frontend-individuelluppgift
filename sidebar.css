@@ -84,3 +84,12 @@ label {
     display: block;
   }
 }
+
+/* anpassad struktur och layout för smalt browserfönster*/
+@media (max-width: 1024px) {
+  aside {
+    top: 6rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
