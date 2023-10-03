@@ -30,10 +30,17 @@ label {
 
 #sidebar_news {
   list-style-type: none;
-  margin: 1rem 1.5rem 1.5rem;
+  margin: 1rem 0rem 1.5rem;
   padding: 0;
   line-height: 2.5rem;
-  
+}
+
+#sidebar_news li:nth-child(even) {
+  background-color: rgb(255, 255, 255, .6);
+}
+
+#sidebar_news li {
+  text-indent: 1.5rem;
 }
 
 /* mobilanpassad struktur och layout */
