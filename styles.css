@@ -65,25 +65,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-main {
-  flex-grow: 1;
-  min-width: min-content;
-
-  /* placeholder-inställningar, ersätt med grid */
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; 
-  /* slut placeholder-inställningar */
-}
-
-/* placeholder-content, ersätts med grid-items */
-main > article {
-  height: 20rem;
-  background-color: white;
-  font-size: 20pt;
-}
-/* slut placeholder-content */
-
 footer {
   display: flex;
   justify-content: center;
@@ -100,11 +81,6 @@ footer {
     flex-direction: column-reverse;
     gap: 0;
   }
-
-  main {
-    margin: 0 auto;
-    width: 100%;
-  }
 }
 
 /* anpassad struktur och layout för smalt browserfönster*/
@@ -112,10 +88,5 @@ footer {
   #container {
     flex-direction: column-reverse;
     gap: 0;
-  }
-
-  main {
-    margin: 0 auto;
-    width: 100%;
   }
 }
