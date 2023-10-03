@@ -10,7 +10,6 @@ aside {
   min-width: min-content;
   border: var(--border);
   border-radius: var(--border-radius);
-  font-family: var(--body_font);
 }
 
 input {
@@ -19,7 +18,7 @@ input {
 
 label {
   position: relative;
-  margin: -.1rem -.1rem 0 -.1rem;
+  margin: -.1rem;
   display: block;
   padding: var(--padding);
   border: .1rem solid black;
@@ -43,5 +42,37 @@ label {
     top: 6rem;
     margin: 0 auto;
     width: 100%;
+  }
+
+  input + label + #sidebar_news {
+    display: none;
+  }
+
+  /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
+
+  input + label::after {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: .6rem;
+  }
+
+  input:not(:checked) + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+  }
+
+  input:checked + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+  }
+  /* slut se över */
+
+  input:not(:checked) + label {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+
+  input:checked + label + #sidebar_news {
+    display: block;
   }
 }
