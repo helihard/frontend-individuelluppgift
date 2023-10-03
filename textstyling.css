@@ -1,0 +1,18 @@
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#sidebar_news a:hover {
+  text-decoration: underline;
+}
+
+#sidebar_news a:active {
+  text-decoration: underline;
+}
+
