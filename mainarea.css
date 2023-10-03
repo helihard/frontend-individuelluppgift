@@ -36,6 +36,16 @@ grid-column-end: span 3;
 grid-row-end: span 3;
 }
 
+article:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+article:active {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
 /* mobilanpassad struktur och layout */
 @media screen and (max-width: 480px) {
   main {
