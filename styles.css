@@ -1,5 +1,4 @@
 * {
-  background-color: whitesmoke;
   box-sizing: border-box;
 }
 
@@ -8,11 +7,13 @@
   --border: .1rem solid lightgrey;
   --border-radius: .6rem;
   --body_font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --bgcolor: whitesmoke;
 }
 
 html {
   margin: 0;
   padding: 0;
+  background-color: var(--bgcolor);
 }
 
 #wrapper {
@@ -30,6 +31,7 @@ header {
   border-bottom: var(--border);
   height: 3rem;
   font-family: var(--body_font);
+  background-color: var(--bgcolor);
 }
 
 nav {
@@ -43,6 +45,7 @@ nav {
   border-bottom: var(--border);
   height: 5rem;
   font-family: var(--body_font);
+  background-color: var(--bgcolor);
 }
 
 #nav_placeholder {
@@ -50,6 +53,7 @@ nav {
   top: 5rem;
   z-index: 4000;
   height: 1rem;
+  background-color: var(--bgcolor);
 }
 
 /* container för huvudarea och sidebar */

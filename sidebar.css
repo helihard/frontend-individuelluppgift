@@ -4,6 +4,7 @@ aside {
   margin-top: 4rem;
   z-index: 3000;
   padding-bottom: 1rem;
+  background-color: var(--bgcolor);
 }
 
 #aside_content {
