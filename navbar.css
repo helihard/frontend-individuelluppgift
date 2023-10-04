@@ -25,6 +25,13 @@ input + .nav_tab {
   min-width: 13rem;
 }
 
+.nav_tab:not(:first-child) {
+  border-right: var(--border);
+  border-top-right-radius: var(--border-radius);
+  position: relative;
+  margin-left: -1rem;
+}
+
 input + .nav_tab:hover {
   background-color: whitesmoke;
 }
@@ -32,27 +39,6 @@ input + .nav_tab:hover {
 input:checked + .nav_tab {
   background-color: var(--bgcolor);
   border-bottom: .1rem solid transparent;
-}
-
-#nav_tab2 {
-  border-right: var(--border);
-  border-top-right-radius: var(--border-radius);
-  position: relative;
-  margin-left: -1rem;
-}
-
-#nav_tab3 {
-  border-right: var(--border);
-  border-top-right-radius: var(--border-radius);
-  position: relative;
-  margin-left: -1rem;
-}
-
-#nav_tab4 {
-  border-right: var(--border);
-  border-top-right-radius: var(--border-radius);
-  position: relative;
-  margin-left: -1rem;
 }
 
 #nav-searchbar-container {
