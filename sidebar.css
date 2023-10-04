@@ -92,4 +92,49 @@ label {
     margin: 0 auto;
     width: 100%;
   }
+
+  input:not(:checked) + label + #sidebar_news {
+    display: block;
+  }
+
+  input:checked + label + #sidebar_news {
+    display: none;
+  }
+
+  /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
+
+  input + label::after {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: .6rem;
+  }
+
+  input:not(:checked) + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+  }
+
+  input:checked + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+  }
+  /* slut se över */
+
+  input:checked + label {
+    border: .1rem solid rgb(40, 42, 53);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: rgb(40, 42, 53);
+  }
+
+  input + label:hover {
+    cursor: pointer;
+    background-color: black;
+    border-color: black;
+  }
+
+  input:not(checked) + label {
+    background-color: black;
+    border-color: black;
+  }
 }
