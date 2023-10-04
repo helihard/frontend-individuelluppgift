@@ -22,10 +22,10 @@ label {
   margin: -.1rem;
   display: block;
   padding: var(--padding);
-  border: .1rem solid black;
+  border: .1rem solid rgb(40, 42, 53);
   border-top-left-radius: var(--border-radius);
   border-top-right-radius:var(--border-radius);
-  background-color: black;
+  background-color: rgb(40, 42, 53);
   color: whitesmoke;
 }
 
