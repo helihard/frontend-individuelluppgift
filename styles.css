@@ -36,7 +36,6 @@ header {
 #nav_placeholder {
   position: sticky;
   top: 5rem;
-  z-index: 4000;
   height: 1rem;
   background-color: var(--bgcolor);
 }
