@@ -13,11 +13,11 @@ aside {
   border-radius: var(--border-radius);
 }
 
-input {
+input[type="checkbox"] {
   display: none;
 }
 
-label {
+#sidebar_label {
   position: relative;
   margin: -.1rem;
   display: block;
@@ -52,40 +52,40 @@ label {
     width: 100%;
   }
 
-  input + label + #sidebar_news {
+  input + #sidebar_label + #sidebar_news {
     display: none;
   }
 
   /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
 
-  input + label::after {
+  input + #sidebar_label::after {
     font-size: 15px;
     font-weight: bold;
     margin-left: .6rem;
   }
 
-  input:not(:checked) + label::after {
+  input:not(:checked) + #sidebar_label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d7";
   }
 
-  input:checked + label::after {
+  input:checked + #sidebar_label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
   }
   /* slut se över */
 
-  input:not(:checked) + label {
+  input:not(:checked) + #sidebar_label {
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
   }
 
-  input:checked + label {
+  input:checked + #sidebar_label {
     border: .1rem solid black;
     background-color: black;
   }
 
-  input:checked + label + #sidebar_news {
+  input:checked + #sidebar_label + #sidebar_news {
     display: block;
   }
 }
@@ -98,47 +98,47 @@ label {
     width: 100%;
   }
 
-  input:not(:checked) + label + #sidebar_news {
+  input:not(:checked) + #sidebar_label + #sidebar_news {
     display: block;
   }
 
-  input:checked + label + #sidebar_news {
+  input:checked + #sidebar_label + #sidebar_news {
     display: none;
   }
 
   /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
 
-  input + label::after {
+  input + #sidebar_label::after {
     font-size: 15px;
     font-weight: bold;
     margin-left: .6rem;
   }
 
-  input:not(:checked) + label::after {
+  input:not(:checked) + #sidebar_label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
   }
 
-  input:checked + label::after {
+  input:checked + #sidebar_label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d7";
   }
   /* slut se över */
 
-  input:checked + label {
+  input:checked + #sidebar_label {
     border: .1rem solid rgb(40, 42, 53);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     background-color: rgb(40, 42, 53);
   }
 
-  input + label:hover {
+  input + #sidebar_label:hover {
     cursor: pointer;
     background-color: black;
     border-color: black;
   }
 
-  input:not(checked) + label {
+  input:not(checked) + #sidebar_label {
     background-color: black;
     border-color: black;
   }

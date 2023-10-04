@@ -28,22 +28,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: var(--padding);
-  border-bottom: var(--border);
   height: 3rem;
-  font-family: var(--body_font);
-  background-color: var(--bgcolor);
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 5000;
-  padding: var(--padding);
-  border-bottom: var(--border);
-  height: 5rem;
   font-family: var(--body_font);
   background-color: var(--bgcolor);
 }

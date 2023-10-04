@@ -5,6 +5,7 @@
     <link href="sidebar.css" rel="stylesheet">
     <link href="textstyling.css" rel="stylesheet">
     <link href="mainarea.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En nyhetssida</title>
@@ -12,7 +13,15 @@
   <body>
     <div id="wrapper">
       <header>Header med text</header>
-      <nav>Navbar med länkar</nav>
+      <nav>
+        <input type="radio" id="nav_tab1" name="navbartabs" checked><label for="nav_tab1" class="nav_tab" style="z-index: 5000;"><a href="index.html">Index</a></label>
+        <input type="radio" id="nav_tab2" name="navbartabs"><label for="nav_tab2" class="nav_tab" id="nav_tab2"><a href="#">Länk till dokument</a></label>
+        <input type="radio" id="nav_tab3" name="navbartabs"><label for="nav_tab3" class="nav_tab" id="nav_tab3"><a href="#">Länk till dokument</a></label>
+        <input type="radio" id="nav_tab4" name="navbartabs"><label for="nav_tab4" class="nav_tab" id="nav_tab4"><a href="#">Länk till dokument</a></label>
+        <div id="nav-searchbar-container">
+          <div id="searchbar">Searchbar</div>
+        </div>
+      </nav>
       <div id="nav_placeholder"></div>
       <div id="container">
         <main>
@@ -31,7 +40,7 @@
         <aside>
           <div id="aside_content">
             <input type="checkbox" id="aside_title">
-            <label for="aside_title">Sidebar sidebar sidebar sidebar sidebar</label>
+            <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
             <ul id="sidebar_news">
               <li><a href="#">Valfri artikel</a></li>
               <li><a href="#">Valfri artikel</a></li>
