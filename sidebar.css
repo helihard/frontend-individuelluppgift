@@ -80,13 +80,18 @@ label {
     border-bottom-right-radius: var(--border-radius);
   }
 
+  input:checked + label {
+    border: .1rem solid black;
+    background-color: black;
+  }
+
   input:checked + label + #sidebar_news {
     display: block;
   }
 }
 
 /* anpassad struktur och layout för smalt browserfönster*/
-@media (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   aside {
     top: 6rem;
     margin: 0 auto;
