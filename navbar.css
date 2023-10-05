@@ -55,12 +55,14 @@ input:checked + .nav_tab {
 
 #searchbar-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: var(--border);
   border-radius: 5rem;
-  min-height: 1.5rem;
+  height: 2.7rem;
   max-width: max-content;
   background-color: white;
+  position: absolute;
 }
 
 #searchbar-container:focus-within {
@@ -74,6 +76,8 @@ input:checked + .nav_tab {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   background-color: white;
+  width: 11rem;
+  position: relative;
 }
 
 #searchbar:placeholder-shown {
@@ -86,11 +90,11 @@ input:checked + .nav_tab {
   background-color: white;
   outline: 0;
   border: 0;
-  padding: .7rem;
+  padding: .7rem 0.8rem;
   border-radius: 5rem;
-  min-height: 1.5rem;
   font-size: inherit;
   cursor: pointer;
+  position: relative;
 }
 
 #search-button:hover {
