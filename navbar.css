@@ -3,7 +3,8 @@ nav {
   justify-content: flex-start;
   position: sticky;
   top: 0;
-  padding-left: 1rem; /* Obs! är detta den bästa lösningen eller är det annan inställning som bör ändras? */
+  margin-left: -1rem; /* Se över den här lösningen */
+  padding-left: 2rem; /* Se över den här lösningen */
   height: 5rem;
   font-family: var(--body_font);
   background-color: var(--bgcolor);
