@@ -50,6 +50,8 @@ input:checked + .nav_tab {
   background-color: var(--bgcolor);
 }
 
+/* Obs! Fixa responsiviteten för sökrutan! */
+
 #searchbar-container {
   display: flex;
   align-items: center;
@@ -87,6 +89,7 @@ input:checked + .nav_tab {
   border-radius: 5rem;
   min-height: 1.5rem;
   font-size: inherit;
+  cursor: pointer;
 }
 
 #search-button:hover {
