@@ -66,6 +66,10 @@ footer {
     flex-direction: column-reverse;
     gap: 0;
   }
+
+  header {
+    display: none;
+  }
 }
 
 /* anpassad struktur och layout för smalt browserfönster*/
