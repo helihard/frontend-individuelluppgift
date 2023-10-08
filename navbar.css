@@ -51,8 +51,6 @@ input:checked + .nav_tab {
   background-color: var(--bgcolor);
 }
 
-/* Obs! Fixa responsiviteten för sökrutan! */
-
 #searchbar-container {
   display: flex;
   justify-content: space-between;
@@ -108,3 +106,29 @@ input:checked + .nav_tab {
   padding: .5rem;
 }*/
 /* slut placeholder-searchbar */
+
+/* responsivitet sökrutor */
+
+@media screen and (min-width: 1250px) {
+  #aside-searchbar-container {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  #aside-searchbar-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1249px) {
+  #nav-searchbar-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1249px) {
+  #nav-searchbar-container {
+    display: none;
+  }
+}

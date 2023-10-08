@@ -43,18 +43,40 @@
 
         </div>
         </main>
-        <aside style="z-index: 3000;">
-          <div id="aside_content">
-            <input type="checkbox" id="aside_title">
-            <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
-            <ul id="sidebar_news">
-              <li><a href="#">Valfri artikel</a></li>
-              <li><a href="#">Valfri artikel</a></li>
-              <li><a href="#">Valfri artikel</a></li>
-              <li><a href="#">Valfri artikel</a></li>
-            </ul>
-          </div>
-        </aside>
+          <div id="aside-container">
+            <div id="aside-searchbar-container">
+              <form action="https://www.google.com/" method="get" target="_blank">
+                <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+            <aside style="z-index: 3000;">
+              <div id="aside_content">
+                <input type="checkbox" id="aside_title">
+                <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
+                <ul id="sidebar_news">
+                  <li><a href="#">Valfri artikel</a></li>
+                  <li><a href="#">Valfri artikel</a></li>
+                  <li><a href="#">Valfri artikel</a></li>
+                  <li><a href="#">Valfri artikel</a></li>
+                </ul>
+              </div><!--slut id="aside-content"-->
+            </aside>
+          
+
+          <!--<aside style="z-index: 3000;">
+            <div id="aside_content">
+              <input type="checkbox" id="aside_title">
+              <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
+              <ul id="sidebar_news">
+                <li><a href="#">Valfri artikel</a></li>
+                <li><a href="#">Valfri artikel</a></li>
+                <li><a href="#">Valfri artikel</a></li>
+                <li><a href="#">Valfri artikel</a></li>
+              </ul>
+            </div>slut id="aside-content"
+          </aside>-->
+        </div> <!-- slut id="aside-container"-->
       </div> <!-- slut id="container" -->
       <footer>Footer med länkar till sociala medier</footer>
     </div> <!-- slut id="wrapper" -->

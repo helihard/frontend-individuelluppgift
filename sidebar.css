@@ -1,10 +1,28 @@
+#aside-container {
+  position: sticky;
+  top: calc(5rem + 1rem); /* height nav + nav_placeholder */
+  display: flex;
+  flex-direction: column;
+  padding-top: .1rem;
+  padding-bottom: 1rem;
+  background-color: var(--bgcolor);
+  gap: 1rem;
+}
+
 aside {
+  background-color: var(--bgcolor);
+  min-width: max-content;
+  max-width: 60vw;
+  background-color: var(--bgcolor);
+}
+
+/*aside {
   position: sticky;
   top: 10rem;
   margin-top: 4rem;
   padding-bottom: 1rem;
   background-color: var(--bgcolor);
-}
+}*/
 
 #aside_content {
   min-width: min-content;
@@ -41,6 +59,21 @@ input[type="checkbox"] {
 
 #sidebar_news li {
   text-indent: 1.5rem;
+}
+
+#aside-searchbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--border);
+  border-radius: 5rem;
+  height: 2.7rem;
+  max-width: max-content;
+  background-color: white;
+  }
+  
+#aside-searchbar-container:focus-within {
+  outline: var(--border);
 }
 
 /* mobilanpassad struktur och layout */
@@ -91,11 +124,12 @@ input[type="checkbox"] {
 
 /* anpassad struktur och layout för smalt browserfönster*/
 @media (min-width: 481px) and (max-width: 1024px) {
-  aside {
-    top: 6rem;
-    margin: 0 auto;
+  #aside-container {
     width: 100%;
+    margin-left: -1rem;
+    padding-left: 1rem;
   }
+
 
   input:not(:checked) + #sidebar_label + #sidebar_news {
     display: block;
