@@ -125,7 +125,7 @@ input[type="checkbox"] {
 /* anpassad struktur och layout för smalt browserfönster*/
 @media (min-width: 481px) and (max-width: 1024px) {
   #aside-container {
-    width: 100%;
+    width: 110%;
     margin-left: -1rem;
     padding-left: 1rem;
   }
