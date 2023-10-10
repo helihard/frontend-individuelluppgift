@@ -176,3 +176,14 @@ input[type="checkbox"] {
     border-color: black;
   }
 }
+
+@media (max-width: 1249px) {
+  #aside-container {
+    top: calc(5rem + 5rem + 1rem);
+  }
+}
+
+/*@media screen and (max-width: 1249px) {
+  #aside-container {
+    top: calc(5rem + 5rem + 1rem);
+  }*/
