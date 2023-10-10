@@ -16,24 +16,24 @@
       <div id="xxs-hero">Header med text</div>
       <header>
         <nav style="z-index: 5000;">
-          <input type="radio" id="nav_tab1" name="navbartabs" checked><label for="nav_tab1" class="nav_tab" style="z-index: 6000;"><a href="index.html">Index</a></label>
-          <input type="radio" id="nav_tab2" name="navbartabs"><label for="nav_tab2" class="nav_tab" style="z-index: 7000;"><a href="#">Länk</a></label>
-          <input type="radio" id="nav_tab3" name="navbartabs"><label for="nav_tab3" class="nav_tab" style="z-index: 8000;"><a href="#">Länk</a></label>
-          <input type="radio" id="nav_tab4" name="navbartabs"><label for="nav_tab4" class="nav_tab" style="z-index: 9000;"><a href="#">Länk</a></label>
-          <div id="nav-searchbar-container">
-            <div id="searchbar-container">
+          <input type="radio" id="nav__tab1" name="navbar-tabs" checked><label for="nav__tab1" class="nav__tab" style="z-index: 6000;"><a href="index.html">Index</a></label>
+          <input type="radio" id="nav__tab2" name="navbar-tabs"><label for="nav__tab2" class="nav__tab" style="z-index: 7000;"><a href="#">Länk</a></label>
+          <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index: 8000;"><a href="#">Länk</a></label>
+          <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index: 9000;"><a href="#">Länk</a></label>
+          <div id="nav__searchbar-tab">
+            <div id="nav__searchbar-container">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
-            </div> <!-- slut id="searchbar-container" -->
-          </div> <!-- slut id="nav-searchbar-container"-->
+            </div> <!-- slut id="nav__searchbar-container" -->
+          </div> <!-- slut id="nav__searchbar-tab"-->
         </nav>
-        <div id="nav_placeholder" style="z-index: 4000;"></div>
+        <div id="nav__placeholder" style="z-index: 4000;"></div>
       </header>
       <div id="container">
         <main>
-          <div id="main-area-container">
+          <div id="main__container">
           <article class="span2col span2row">Valfri nyhetsartikel på 2 kolumner 2 rader</article>
           <article class="span2col">Valfri nyhetsartikel på 2 kolumner 1 rad</article>
           <article class="span2col">Valfri nyhetsartikel på 2 kolumner 1 rad</article>
@@ -45,25 +45,26 @@
 
         </div>
         </main>
-          <div id="aside-container">
-            <div id="aside-searchbar-container">
+          <aside style="z-index: 3000;">
+            <div id="aside__searchbar-container">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
-            <aside style="z-index: 3000;">
-              <div id="aside_content">
-                <input type="checkbox" id="aside_title">
-                <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
-                <ul id="sidebar_news">
+            <div id="sidebar"> <!-- tidigare style="z-index: 3000;" -->
+              <!--<div id="aside_content"> -->
+                <input type="checkbox" id="sidebar__title">
+                <label for="sidebar__title" id="sidebar__label">Sidebar sidebar sidebar sidebar sidebar</label>
+                <ul id="sidebar__news">
                   <li><a href="#">Valfri artikel</a></li>
                   <li><a href="#">Valfri artikel</a></li>
                   <li><a href="#">Valfri artikel</a></li>
                   <li><a href="#">Valfri artikel</a></li>
                 </ul>
-              </div><!--slut id="aside-content"-->
-            </aside>
+              <!--</div> slut id="aside-content"-->
+            </div> <!-- slut id="sidebar"-->
+          </aside>
           
 
           <!--<aside style="z-index: 3000;">
@@ -78,7 +79,6 @@
               </ul>
             </div>slut id="aside-content"
           </aside>-->
-        </div> <!-- slut id="aside-container"-->
       </div> <!-- slut id="container" -->
       <footer>Footer med länkar till sociala medier</footer>
     </div> <!-- slut id="wrapper" -->

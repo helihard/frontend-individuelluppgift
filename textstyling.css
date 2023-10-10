@@ -8,11 +8,11 @@ a:visited {
   text-decoration: none;
 }
 
-#sidebar_news a:hover {
+#sidebar__news a:hover {
   text-decoration: underline;
 }
 
-#sidebar_news a:active {
+#sidebar__news a:active {
   text-decoration: underline;
 }
 

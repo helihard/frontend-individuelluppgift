@@ -1,4 +1,4 @@
-#aside-container {
+aside { /* tidigare: #aside-container */
   position: sticky;
   top: calc(5rem + 1rem); /* height nav + nav_placeholder */
   display: flex;
@@ -9,11 +9,12 @@
   gap: 1rem;
 }
 
-aside {
+#sidebar { /* tidigare: aside */
   background-color: var(--bgcolor);
   min-width: max-content;
   max-width: 60vw;
-  background-color: var(--bgcolor);
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 /*aside {
@@ -24,17 +25,17 @@ aside {
   background-color: var(--bgcolor);
 }*/
 
-#aside_content {
+/* #aside_content {
   min-width: min-content;
   border: var(--border);
   border-radius: var(--border-radius);
-}
+} */
 
 input[type="checkbox"] {
   display: none;
 }
 
-#sidebar_label {
+#sidebar__label {
   position: relative;
   margin: -.1rem;
   display: block;
@@ -46,22 +47,22 @@ input[type="checkbox"] {
   color: whitesmoke;
 }
 
-#sidebar_news {
+#sidebar__news {
   list-style-type: none;
   margin: 1rem 0rem 1.5rem;
   padding: 0;
   line-height: 2.5rem;
 }
 
-#sidebar_news li:nth-child(even) {
+#sidebar__news li:nth-child(even) {
   background-color: rgb(255, 255, 255, .6);
 }
 
-#sidebar_news li {
+#sidebar__news li {
   text-indent: 1.5rem;
 }
 
-#aside-searchbar-container {
+#aside__searchbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,7 @@ input[type="checkbox"] {
   background-color: white;
   }
   
-#aside-searchbar-container:focus-within {
+#aside__searchbar-container:focus-within {
   outline: var(--border);
 }
 
@@ -84,106 +85,106 @@ input[type="checkbox"] {
     width: 100%;
   }
 
-  input + #sidebar_label + #sidebar_news {
+  input + #sidebar__label + #sidebar__news {
     display: none;
   }
 
   /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
 
-  input + #sidebar_label::after {
+  input + #sidebar__label::after {
     font-size: 15px;
     font-weight: bold;
     margin-left: .6rem;
   }
 
-  input:not(:checked) + #sidebar_label::after {
+  input:not(:checked) + #sidebar__label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d7";
   }
 
-  input:checked + #sidebar_label::after {
+  input:checked + #sidebar__label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
   }
   /* slut se över */
 
-  input:not(:checked) + #sidebar_label {
+  input:not(:checked) + #sidebar__label {
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
   }
 
-  input:checked + #sidebar_label {
+  input:checked + #sidebar__label {
     border: .1rem solid black;
     background-color: black;
   }
 
-  input:checked + #sidebar_label + #sidebar_news {
+  input:checked + #sidebar__label + #sidebar__news {
     display: block;
   }
 }
 
 /* anpassad struktur och layout för smalt browserfönster*/
 @media (min-width: 481px) and (max-width: 1024px) {
-  #aside-container {
+  aside { /* tidigare: aside-container */
     width: 110%;
     margin-left: -1rem;
     padding-left: 1rem;
   }
 
 
-  input:not(:checked) + #sidebar_label + #sidebar_news {
+  input:not(:checked) + #sidebar__label + #sidebar__news {
     display: block;
   }
 
-  input:checked + #sidebar_label + #sidebar_news {
+  input:checked + #sidebar__label + #sidebar__news {
     display: none;
   }
 
   /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
 
-  input + #sidebar_label::after {
+  input + #sidebar__label::after {
     font-size: 15px;
     font-weight: bold;
     margin-left: .6rem;
   }
 
-  input:not(:checked) + #sidebar_label::after {
+  input:not(:checked) + #sidebar__label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
   }
 
-  input:checked + #sidebar_label::after {
+  input:checked + #sidebar__label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d7";
   }
   /* slut se över */
 
-  input:checked + #sidebar_label {
+  input:checked + #sidebar__label {
     border: .1rem solid rgb(40, 42, 53);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     background-color: rgb(40, 42, 53);
   }
 
-  input + #sidebar_label:hover {
+  input + #sidebar__label:hover {
     cursor: pointer;
     background-color: black;
     border-color: black;
   }
 
-  input:not(checked) + #sidebar_label {
+  input:not(checked) + #sidebar__label {
     background-color: black;
     border-color: black;
   }
 }
 
 @media (max-width: 1249px) {
-  #aside-container {
+  aside { /* tidigare: aside-container */
     top: calc(5rem + 5rem + 1rem);
   }
 }
 
 /*@media screen and (max-width: 1249px) {
-  #aside-container {
+  aside { /* tidigare: aside-container
     top: calc(5rem + 5rem + 1rem);
   }*/

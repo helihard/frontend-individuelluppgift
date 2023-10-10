@@ -3,7 +3,7 @@ main {
 }
 
 /* Obs! Se över inställningar för hur artiklar beter sig vid olika screenstorlekar/browservidder - hur flödar de, hur växer/krymper de etc */
-#main-area-container {
+#main__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   grid-auto-rows: minmax(10rem, auto);
