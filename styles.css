@@ -23,7 +23,7 @@ html {
   max-width: 85vw;
 }
 
-header {
+#xxs-hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,11 +33,14 @@ header {
   background-color: var(--bgcolor);
 }
 
-#nav_placeholder {
+header {
   position: sticky;
-  top: 5rem;
+  top: 0;
   margin-left: -1rem;
-  height: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--body_font);
   background-color: var(--bgcolor);
 }
 
@@ -67,7 +70,7 @@ footer {
     gap: 0;
   }
 
-  header {
+  #xxs-hero {
     display: none;
   }
 }
