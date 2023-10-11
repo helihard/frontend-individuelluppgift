@@ -6,6 +6,7 @@
     <link href="textstyling.css" rel="stylesheet">
     <link href="mainarea.css" rel="stylesheet">
     <link href="navbar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
     <meta charset="utf-8">
@@ -24,7 +25,7 @@
             <div id="nav__searchbar-container">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
-                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
               </form>
             </div> <!-- slut id="nav__searchbar-container" -->
           </div> <!-- slut id="nav__searchbar-tab"-->
@@ -49,7 +50,7 @@
             <div id="aside__searchbar-container">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
-                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
               </form>
             </div>
             <div id="sidebar"> <!-- tidigare style="z-index: 3000;" -->
@@ -80,7 +81,30 @@
             </div>slut id="aside-content"
           </aside>-->
       </div> <!-- slut id="container" -->
-      <footer>Footer med länkar till sociala medier</footer>
+      <footer>
+        <div>&copy;Nyhetssida 2023</div>
+        <div>Ansvarig utgivare: Heli Hård</div>
+        <div style="display:grid;grid-template-columns: repeat(3, 1fr);width:100%;align-items:center;padding:.5rem 0 0;">
+          <a href="mailto:heli.hard@studerande.plushogskolan.se"><span id="email"><i class="fa-solid fa-envelope" title="Email"></i>
+            <i class="fa-solid fa-envelope-open" title="Email"></i></span>
+          </a>
+          <div id="footer__social-media">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook" title="Facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin" title="Linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fa-brands fa-x-twitter" title="X (Twitter)"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <i class="fa-brands fa-youtube" title="Youtube"></i>
+            </a>
+          </div> <!--slut id="footer__social-media" -->
+          <div id="#footer__placeholder"></div>
+        </div> <!-- slut grid-div -->
+      </footer>
     </div> <!-- slut id="wrapper" -->
   </body>
 </html>

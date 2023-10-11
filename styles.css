@@ -53,16 +53,6 @@ header {
   margin-bottom: 1rem;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgrey;
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-  font-family: var(--body_font);
-}
-
 /* mobilanpassad struktur och layout */
 @media screen and (max-width: 480px) {
   #container {

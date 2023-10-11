@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  font-family: var(--body_font);
+}
+
+#footer__social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
+i {
+  font-size: 2rem;
+  color: black;
+  opacity: .7;
+  transition: .1s ease-in-out;
+}
+
+i:hover, .i:active {
+  opacity: 1.0;
+}
+
+#footer__placeholder {
+  visibility: hidden;
+}
+
+#email i:last-child {
+  display: none;
+}
+
+#email:hover i:first-child {
+  display: none;
+}
+
+#email:hover i:last-child {
+  display: inline-block;
+}
+
+
