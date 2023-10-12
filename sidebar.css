@@ -45,13 +45,19 @@ input[type="checkbox"] {
   border-top-right-radius:var(--border-radius);
   background-color: rgb(40, 42, 53);
   color: whitesmoke;
+  font-family: 'Lato', sans-serif;
 }
 
 #sidebar__news {
   list-style-type: none;
-  margin: 1rem 0rem 1.5rem;
+  margin: 1rem 0 1.5rem;
   padding: 0;
   line-height: 2.5rem;
+  font-family: var(--body_font);
+}
+
+#sidebar__news li {
+  padding-right: 1rem;
 }
 
 #sidebar__news li:nth-child(even) {

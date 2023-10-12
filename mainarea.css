@@ -15,18 +15,18 @@ article {
   border: var(--border);
   border-radius: var(--border-radius);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
   background-color: white;
+  font-family: var(--body_font);
 }
 
 .small {
   width: 10rem;
+  height: 10rem;
 }
 
 .span2col {                
   grid-column-end: span 2;
+  flex-grow: 2;
 }
 
 .span2row {
