@@ -1,0 +1,14 @@
+search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--border);
+  border-radius: 5rem;
+  height: 2.7rem;
+  max-width: max-content;
+  background-color: white;
+}
+
+search:focus-within {
+  outline: var(--border);
+}

@@ -6,6 +6,7 @@
     <link href="textstyling.css" rel="stylesheet">
     <link href="mainarea.css" rel="stylesheet">
     <link href="navbar.css" rel="stylesheet">
+    <link href="search.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
@@ -23,12 +24,12 @@
           <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index: 8000;"><a href="#">Länk</a></label>
           <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index: 9000;"><a href="#">Länk</a></label>
           <div id="nav__searchbar-tab">
-            <div id="nav__searchbar-container">
+            <search style="position: absolute;">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
               </form>
-            </div> <!-- slut id="nav__searchbar-container" -->
+            </search>
           </div> <!-- slut id="nav__searchbar-tab"-->
         </nav>
         <div id="nav__placeholder" style="z-index: 4000;"></div>
@@ -93,12 +94,12 @@
         </div>
         </main>
           <aside style="z-index: 3000;">
-            <div id="aside__searchbar-container">
+            <search>
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="text" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
               </form>
-            </div>
+            </search>
             <div id="sidebar"> <!-- tidigare style="z-index: 3000;" -->
               <!--<div id="aside_content"> -->
                 <input type="checkbox" id="sidebar__title">

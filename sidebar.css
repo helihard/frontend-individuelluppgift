@@ -68,21 +68,6 @@ input[type="checkbox"] {
   text-indent: 1.5rem;
 }
 
-#aside__searchbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: var(--border);
-  border-radius: 5rem;
-  height: 2.7rem;
-  max-width: max-content;
-  background-color: white;
-  }
-  
-#aside__searchbar-container:focus-within {
-  outline: var(--border);
-}
-
 /* mobilanpassad struktur och layout */
 @media screen and (max-width: 480px) {
   aside {
