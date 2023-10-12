@@ -10,11 +10,7 @@ input[type="radio"] {
 }
 
 input + .nav__tab {
-  border-top: var(--border);
-  border-left: var(--border);
   border-bottom: var(--border);
-  border-top-left-radius: var(--border-radius);
-  padding: 1.75rem 1rem;
   background-color: rgb(226, 226, 226);
   cursor: pointer;
   transition: .1s ease-in-out;
@@ -22,15 +18,29 @@ input + .nav__tab {
   height: 5rem;
 }
 
+#index-tab {
+  background-color: var(--bgcolor);
+  padding: 0 .5rem;
+  border-bottom: .1rem solid transparent;
+}
+
+input:not(:clicked) + #index-tab {
+  border-bottom: .1rem solid transparent;
+}
+
 input:not(:first-child) + .nav__tab:not(:first-child) {
+  border-top: var(--border);
+  border-left: var(--border);
   border-right: var(--border);
+  border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   position: relative;
   margin-left: -1rem;
+  padding: 1.4rem .7rem;
 }
 
 input + .nav__tab:hover {
-  background-color: whitesmoke;
+  background-color: var(--bgcolor);
 }
 
 input:checked + .nav__tab {

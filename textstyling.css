@@ -1,3 +1,39 @@
+@keyframes tagline-glitch {
+  0% {text-shadow: none;}
+  25% {text-shadow: -2px -2px 0 cyan;}
+  50% {text-shadow: 2px 2px 0 magenta;}
+  75% {text-shadow: -2px -2px 0 cyan, 2px 2px 0 magenta;}
+  100% {text-shadow: none;}
+}
+
+#tagline {
+  font-size: 1.2rem;
+  animation: tagline-glitch .5s linear .5s 2;
+
+}
+
+#logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.7rem;
+  color: rgb(40, 42, 53);
+  text-shadow: -2px -2px 0 cyan, 2px 2px 0 magenta;
+  background-color: var(--bgcolor);
+}
+
+#logo:hover {
+  text-shadow: none;
+}
+
+#logo:active {
+  text-shadow: none;
+}
+
+nav h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
 a:link {
   color: inherit;
   text-decoration: none;

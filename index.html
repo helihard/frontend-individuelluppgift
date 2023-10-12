@@ -9,20 +9,22 @@
     <link href="search.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&display=swap" rel="stylesheet">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
     <meta charset="utf-8">
     <title>En nyhetssida</title>
   </head>
   <body>
     <div id="wrapper">
-      <div id="xxs-hero">Header med text</div>
+      <div id="xxs-hero"><em id="tagline">Header med text</em></div>
       <header>
         <nav style="z-index: 5000;">
-          <input type="radio" id="nav__tab1" name="navbar-tabs" checked><label for="nav__tab1" class="nav__tab" style="z-index: 6000;"><a href="index.html">Index</a></label>
-          <input type="radio" id="nav__tab2" name="navbar-tabs"><label for="nav__tab2" class="nav__tab" style="z-index: 7000;"><a href="#">Länk</a></label>
-          <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index: 8000;"><a href="#">Länk</a></label>
-          <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index: 9000;"><a href="#">Länk</a></label>
+          <input type="radio" id="nav__tab1" name="navbar-tabs" checked><label for="nav__tab1" class="nav__tab" id="index-tab" style="z-index: 6000;" ><a href="index.html" id="logo">glitch.</a></label>
+          <input type="radio" id="nav__tab2" name="navbar-tabs"><label for="nav__tab2" class="nav__tab" style="z-index: 7000;"><a href="#"><h1>Länk</h1></a></label>
+          <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index: 8000;"><a href="#"><h1>Länk</h1></a></label>
+          <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index: 9000;"><a href="#"><h1>Länk</h1></a></label>
           <div id="nav__searchbar-tab">
             <search style="position: absolute;">
               <form action="https://www.google.com/" method="get" target="_blank">
@@ -130,7 +132,7 @@
           </aside>-->
       </div> <!-- slut id="container" -->
       <footer>
-        <div>&copy;Nyhetssida 2023</div>
+        <div>&copy; glitch. 2023</div>
         <div>Ansvarig utgivare: Heli Hård</div>
         <div style="display:grid;grid-template-columns: repeat(3, 1fr);width:100%;align-items:center;padding:.5rem 0 0;">
           <a href="mailto:heli.hard@studerande.plushogskolan.se"><span id="email"><i class="fa-solid fa-envelope" title="Email"></i>
