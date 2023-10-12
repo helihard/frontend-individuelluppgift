@@ -80,12 +80,11 @@ input[type="checkbox"] {
     display: none;
   }
 
-  /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
-
   input + #sidebar__label::after {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-left: .6rem;
+    right: 1rem;
+    position: absolute;
   }
 
   input:not(:checked) + #sidebar__label::after {
@@ -97,7 +96,6 @@ input[type="checkbox"] {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
   }
-  /* slut se över */
 
   input:not(:checked) + #sidebar__label {
     border-bottom-left-radius: var(--border-radius);
@@ -131,12 +129,11 @@ input[type="checkbox"] {
     display: none;
   }
 
-  /* Obs! Se över inställningar för ikon (positionering, storlek, ev animering */
-
   input + #sidebar__label::after {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-left: .6rem;
+    right: 1rem;
+    position: absolute;
   }
 
   input:not(:checked) + #sidebar__label::after {
@@ -148,7 +145,6 @@ input[type="checkbox"] {
     font-family: "Font Awesome 5 Free";
     content: "\f0d7";
   }
-  /* slut se över */
 
   input:checked + #sidebar__label {
     border: .1rem solid rgb(40, 42, 53);
