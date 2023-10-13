@@ -68,6 +68,14 @@ input[type="checkbox"] {
   text-indent: 1.5rem;
 }
 
+#sidebar__news li a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  font-weight: bold;
+  content: " \f105";
+  position: relative;
+  top: .1rem;}
+
 /* mobilanpassad struktur och layout */
 @media screen and (max-width: 480px) {
   aside {

@@ -88,6 +88,13 @@ hgroup p {
   line-height: 1.5;
 }
 
+.article__newstext::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: .8rem;
+  font-weight: bold;
+  content: " \f105";
+}
+
 .image-byline {
   font-size: .8rem;
   color: darkgrey;
