@@ -8,10 +8,15 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="search.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
+    <link href="tester.css" rel="stylesheet">
+    <link href="media-max480px.css" rel="stylesheet">
+    <link href="media-max1024px.css" rel="stylesheet">
+    <link href="media-larger.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
     <meta charset="utf-8">
     <title>En nyhetssida</title>
@@ -50,6 +55,7 @@
               <p class="article__newstext">Flygande bäckasiner söka hwila på mjuka tuvor</p>
             </div>
           </article>
+          <a href="#"><article class="small"><img src="img/xglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
           <article class="span2col">
             <img src="#" style="width:10rem;border:1px dotted black;">
             <div style="padding:.3rem 1rem .5rem;">
@@ -67,9 +73,7 @@
               <p>på 2 kolumner 1 rad</p>
             </hgroup>
           </article>
-          <article class="small"><img src="#" style="max-width:100%;height:auto"></article>
-          <article class="small"><img src="#"></article>
-          <article class="small"><img src="#"></article>
+          <a href="#"><article class="small"><img src="img/zglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
           <article class="span2col">
             <div style="padding:.3rem 1rem .5rem;">
               <hgroup>
@@ -81,6 +85,7 @@
             </div>
             <img src="#" style="width:10rem;border:1px dotted black;">
           </article>
+          <a href="#"><article class="small"><img src="img/yglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
           <article class="span2col span3row" style="flex-direction:column;">
             <div style="padding:.3rem 1rem .5rem;height:50%;">
               <hgroup>
@@ -96,7 +101,7 @@
         </div>
         </main>
           <aside style="z-index: 3000;">
-            <search>
+            <search style="position: relative;">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="search" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
