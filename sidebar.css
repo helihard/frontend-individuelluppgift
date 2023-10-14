@@ -3,10 +3,23 @@ aside { /* tidigare: #aside-container */
   top: calc(5rem + 1rem); /* height nav + nav_placeholder */
   display: flex;
   flex-direction: column;
-  padding-top: .1rem;
+  /*padding-top: .1rem;*/
   padding-bottom: 1rem;
   background-color: var(--bgcolor);
   gap: 1rem;
+}
+
+aside::before {
+  content: "";
+  background-image: url("img/matrixbw-film.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .2;
 }
 
 #sidebar { /* tidigare: aside */
@@ -15,6 +28,7 @@ aside { /* tidigare: #aside-container */
   max-width: 60vw;
   border: var(--border);
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 /*aside {
@@ -74,112 +88,5 @@ input[type="checkbox"] {
   font-weight: bold;
   content: " \f105";
   position: relative;
-  top: .1rem;}
-
-/* mobilanpassad struktur och layout */
-@media screen and (max-width: 480px) {
-  aside {
-    top: 6rem;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  input + #sidebar__label + #sidebar__news {
-    display: none;
-  }
-
-  input + #sidebar__label::after {
-    font-size: 1.5rem;
-    font-weight: bold;
-    right: 1rem;
-    position: absolute;
-  }
-
-  input:not(:checked) + #sidebar__label::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0d7";
-  }
-
-  input:checked + #sidebar__label::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0d8";
-  }
-
-  input:not(:checked) + #sidebar__label {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-
-  input:checked + #sidebar__label {
-    border: .1rem solid black;
-    background-color: black;
-  }
-
-  input:checked + #sidebar__label + #sidebar__news {
-    display: block;
-  }
+  top: .1rem;
 }
-
-/* anpassad struktur och layout för smalt browserfönster*/
-@media (min-width: 481px) and (max-width: 1024px) {
-  aside { /* tidigare: aside-container */
-    width: 110%;
-    margin-left: -1rem;
-    padding-left: 1rem;
-  }
-
-
-  input:not(:checked) + #sidebar__label + #sidebar__news {
-    display: block;
-  }
-
-  input:checked + #sidebar__label + #sidebar__news {
-    display: none;
-  }
-
-  input + #sidebar__label::after {
-    font-size: 1.5rem;
-    font-weight: bold;
-    right: 1rem;
-    position: absolute;
-  }
-
-  input:not(:checked) + #sidebar__label::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0d8";
-  }
-
-  input:checked + #sidebar__label::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0d7";
-  }
-
-  input:checked + #sidebar__label {
-    border: .1rem solid rgb(40, 42, 53);
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    background-color: rgb(40, 42, 53);
-  }
-
-  input + #sidebar__label:hover {
-    cursor: pointer;
-    background-color: black;
-    border-color: black;
-  }
-
-  input:not(checked) + #sidebar__label {
-    background-color: black;
-    border-color: black;
-  }
-}
-
-@media (max-width: 1249px) {
-  aside { /* tidigare: aside-container */
-    top: calc(5rem + 5rem + 1rem);
-  }
-}
-
-/*@media screen and (max-width: 1249px) {
-  aside { /* tidigare: aside-container
-    top: calc(5rem + 5rem + 1rem);
-  }*/

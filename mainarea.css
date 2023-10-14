@@ -22,6 +22,8 @@ article {
 .small {
   width: 10rem;
   height: 10rem;
+  flex-shrink: 0;
+  overflow:hidden;
 }
 
 .span2col {                
@@ -49,20 +51,4 @@ article:hover {
 article:active {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   cursor: pointer;
-}
-
-/* mobilanpassad struktur och layout */
-@media screen and (max-width: 480px) {
-  main {
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
-/* anpassad struktur och layout för smalt browserfönster*/
-@media (max-width: 1024px) {
-  main {
-    margin: 0 auto;
-    width: 100%;
-  }
 }

@@ -52,23 +52,3 @@ header {
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
-
-/* mobilanpassad struktur och layout */
-@media screen and (max-width: 480px) {
-  #container {
-    flex-direction: column-reverse;
-    gap: 0;
-  }
-
-  #xxs-hero {
-    display: none;
-  }
-}
-
-/* anpassad struktur och layout för smalt browserfönster*/
-@media (max-width: 1024px) {
-  #container {
-    flex-direction: column-reverse;
-    gap: 0;
-  }
-}
