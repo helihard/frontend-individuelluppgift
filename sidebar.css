@@ -9,7 +9,7 @@ aside {
 
 aside::before {
   content: "";
-  background-image: url("img/matrixbw-film.png");
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0), rgb(255, 255, 255, .7)), url("img/matrixbw-film.png");
   background-repeat: no-repeat;
   background-position: top right;
   border-radius: var(--border-radius);

@@ -4,7 +4,7 @@
 
 :root {
   --padding: 1.5rem;
-  --border: .1rem solid lightgrey;
+  --border: .1rem solid lightgray;
   --border-radius: .6rem;
   --body_font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   --bgcolor: whitesmoke;

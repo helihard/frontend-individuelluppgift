@@ -24,7 +24,7 @@ input + .nav__tab {
   border-bottom: .1rem solid transparent;
 }
 
-input:not(:clicked) + #index-tab {
+input:not(:checked) + #index-tab {
   border-bottom: .1rem solid transparent;
 }
 
@@ -86,7 +86,7 @@ input:checked + .nav__tab {
 }
 
 #search-button:hover {
-  background-color: lightgrey;
+  background-color: lightgray;
 }
 
 #nav__placeholder {
