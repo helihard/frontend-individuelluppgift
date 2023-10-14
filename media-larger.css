@@ -34,7 +34,7 @@
 
   /* anpassar sticky-positionen på aside när nav övergår i två rader */
   aside {
-    top: calc(5rem + 5rem + .9rem);
+    top: calc(5rem + 5rem + 1rem);
   }
 }
 

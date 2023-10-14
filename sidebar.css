@@ -1,10 +1,8 @@
-aside { /* tidigare: #aside-container */
+aside {
   position: sticky;
   top: calc(5rem + 1rem); /* height nav + nav_placeholder */
   display: flex;
   flex-direction: column;
-  /*padding-top: .1rem;*/
-  padding-bottom: 1rem;
   background-color: var(--bgcolor);
   gap: 1rem;
 }
@@ -14,6 +12,7 @@ aside::before {
   background-image: url("img/matrixbw-film.png");
   background-repeat: no-repeat;
   background-position: top right;
+  border-radius: var(--border-radius);
   position: absolute;
   top: 0;
   right: 0;
@@ -22,7 +21,7 @@ aside::before {
   opacity: .2;
 }
 
-#sidebar { /* tidigare: aside */
+#sidebar {
   background-color: var(--bgcolor);
   min-width: max-content;
   max-width: 60vw;
@@ -30,20 +29,6 @@ aside::before {
   border-radius: var(--border-radius);
   position: relative;
 }
-
-/*aside {
-  position: sticky;
-  top: 10rem;
-  margin-top: 4rem;
-  padding-bottom: 1rem;
-  background-color: var(--bgcolor);
-}*/
-
-/* #aside_content {
-  min-width: min-content;
-  border: var(--border);
-  border-radius: var(--border-radius);
-} */
 
 input[type="checkbox"] {
   display: none;

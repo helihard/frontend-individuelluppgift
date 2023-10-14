@@ -12,6 +12,7 @@
   /* anpassar vidd aside */
   aside {
     width: 100%;
+    padding-bottom: 1rem;
   }
 
   /* sidebar stängd som default */
