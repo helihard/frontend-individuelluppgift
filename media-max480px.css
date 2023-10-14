@@ -1,0 +1,60 @@
+@media (max-width: 480px) {
+  #container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  /* döljer tagline */
+  #xxs-hero {
+    display: none;
+  }
+
+  /* anpassar vidd aside */
+  aside {
+    width: 100%;
+  }
+
+  /* sidebar stängd som default */
+  input + #sidebar__label + #sidebar__news {
+    display: none;
+  }
+
+  /* öppna/stäng sidebar-pilar */
+  input + #sidebar__label::after {
+    font-size: 1.5rem;
+    font-weight: bold;
+    right: 1rem;
+    position: absolute;
+  }
+
+  input:not(:checked) + #sidebar__label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+  }
+
+  input:checked + #sidebar__label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+  }
+
+  /* rundade respektive skarpa nedre hörn på aside i hopfällt/utfällt läge */
+  input:not(:checked) + #sidebar__label {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+
+  input:checked + #sidebar__label {
+    border: .1rem solid black;
+    background-color: black;
+  }
+
+  /* fäller ut aside */
+  input:checked + #sidebar__label + #sidebar__news {
+    display: block;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: 96%;
+  }
+}

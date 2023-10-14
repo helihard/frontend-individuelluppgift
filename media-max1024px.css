@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+  #container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 98%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  /* anpassar vidd aside */
+  aside {
+    width: 100%;
+  }
+
+  input:not(:checked) + #sidebar__label + #sidebar__news {
+    display: block;
+  }
+
+  input:checked + #sidebar__label + #sidebar__news {
+    display: none;
+  }
+
+  input + #sidebar__label::after {
+    font-size: 1.5rem;
+    font-weight: bold;
+    right: 1rem;
+    position: absolute;
+  }
+
+  input:not(:checked) + #sidebar__label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+  }
+
+  input:checked + #sidebar__label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+  }
+
+  input:checked + #sidebar__label {
+    border: .1rem solid rgb(40, 42, 53);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: rgb(40, 42, 53);
+  }
+
+  input + #sidebar__label:hover {
+    cursor: pointer;
+    background-color: black;
+    border-color: black;
+  }
+
+  input:not(checked) + #sidebar__label {
+    background-color: black;
+    border-color: black;
+  }
+}
