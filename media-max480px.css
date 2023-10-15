@@ -1,18 +1,8 @@
 @media (max-width: 480px) {
-  #container {
-    flex-direction: column-reverse;
-    gap: 0;
-  }
 
   /* döljer tagline */
   #xxs-hero {
     display: none;
-  }
-
-  /* anpassar vidd aside */
-  aside {
-    width: 100%;
-    padding-bottom: 1rem;
   }
 
   /* sidebar stängd som default */
@@ -55,7 +45,6 @@
   }
 
   main {
-    margin: 0 auto;
     max-width: 96%;
   }
 }

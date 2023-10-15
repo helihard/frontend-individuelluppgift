@@ -50,6 +50,10 @@ nav h1::selection {
   font-weight: 300;
 }
 
+#headline-form::after {
+  content: ":";
+}
+
 nav label:hover a #headline-form{
   font-weight: 400;
 }
@@ -62,9 +66,17 @@ nav input:checked + label a #headline-form {
   font-weight: 400;
 }
 
+nav input:checked + label a #headline-form::after {
+  content: ".";
+}
+
 #headline-content {
   font-weight: 300;
   font-style: italic;
+}
+
+#headline-content::after {
+  content: ":";
 }
 
 nav label:hover a #headline-content{
@@ -79,8 +91,16 @@ nav input:checked + label a #headline-content {
   font-weight: 400;
 }
 
+nav input:checked + label a #headline-content::after {
+  content: ".";
+}
+
 #headline-function {
   font-weight: 100;
+}
+
+#headline-function::after {
+  content: ":";
 }
 
 nav label:hover a #headline-function{
@@ -93,6 +113,10 @@ nav input:focus + label a #headline-function {
 
 nav input:checked + label a #headline-function {
   font-weight: 400;
+}
+
+nav input:checked + label a #headline-function::after {
+  content: ".";
 }
 
 a:link {
@@ -117,15 +141,6 @@ a:visited {
   text-decoration: underline;
 }
 
-article a {
-  font-size: smaller;
-  font-weight: bold;
-}
-
-article a:hover {
-  text-decoration: underline;
-}
-
 hgroup {
   width: 100%;
 }
@@ -142,6 +157,14 @@ hgroup h2 {
   margin-bottom: 0;
 }
 
+.quoteh2::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkgray;
+  content: "\f10e";
+}
+
 hgroup p {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -149,6 +172,7 @@ hgroup p {
 }
 
 .article__newstext {
+  font-family: var(--body_font);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -161,9 +185,9 @@ hgroup p {
 }
 
 .image-byline {
+  font-family: var(--body_font);
   font-size: .8rem;
   color: darkgrey;
-  margin: 0;
   display: flex;
 }
 

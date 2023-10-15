@@ -36,6 +36,10 @@
   aside {
     top: calc(5rem + 5rem + 1rem);
   }
+
+  #sidebar {
+    max-width: 60vw;
+  }
 }
 
 @media (min-width: 1250px) {

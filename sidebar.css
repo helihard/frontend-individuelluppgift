@@ -3,8 +3,8 @@ aside {
   top: calc(5rem + 1rem); /* height nav + nav_placeholder */
   display: flex;
   flex-direction: column;
-  background-color: var(--bgcolor);
   gap: 1rem;
+  background-color: var(--bgcolor);
 }
 
 aside::before {
@@ -12,6 +12,7 @@ aside::before {
   background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0), rgb(255, 255, 255, .7)), url("img/matrixbw-film.png");
   background-repeat: no-repeat;
   background-position: top right;
+  background-color: var(--bgcolor);
   border-radius: var(--border-radius);
   position: absolute;
   top: 0;
@@ -24,7 +25,6 @@ aside::before {
 #sidebar {
   background-color: var(--bgcolor);
   min-width: max-content;
-  max-width: 60vw;
   border: var(--border);
   border-radius: var(--border-radius);
   position: relative;
@@ -41,10 +41,11 @@ input[type="checkbox"] {
   padding: var(--padding);
   border: .1rem solid rgb(40, 42, 53);
   border-top-left-radius: var(--border-radius);
-  border-top-right-radius:var(--border-radius);
+  border-top-right-radius: var(--border-radius);
   background-color: rgb(40, 42, 53);
   color: whitesmoke;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
 }
 
 #sidebar__news {
@@ -53,6 +54,7 @@ input[type="checkbox"] {
   padding: 0;
   line-height: 2.5rem;
   font-family: var(--body_font);
+  font-size: 1rem;
 }
 
 #sidebar__news li {

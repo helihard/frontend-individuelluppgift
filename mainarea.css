@@ -2,7 +2,6 @@ main {
   flex-grow: 1;
 }
 
-/* Obs! Se över inställningar för hur artiklar beter sig vid olika screenstorlekar/browservidder - hur flödar de, hur växer/krymper de etc */
 #main__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -16,14 +15,13 @@ article {
   border-radius: var(--border-radius);
   display: flex;
   background-color: white;
-  font-family: var(--body_font);
+  overflow:hidden;
 }
 
 .small {
   width: 10rem;
   height: 10rem;
   flex-shrink: 0;
-  overflow:hidden;
 }
 
 .span2col {                
@@ -32,15 +30,15 @@ article {
 }
 
 .span2row {
-grid-row-end: span 2;
+  grid-row-end: span 2;
 }
 
 .span3col {
-grid-column-end: span 3;
+  grid-column-end: span 3;
 }
 
 .span3row {
-grid-row-end: span 3;
+  grid-row-end: span 3;
 }
 
 article:hover {

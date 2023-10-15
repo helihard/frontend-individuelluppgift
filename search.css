@@ -12,3 +12,35 @@ search {
 search:focus-within {
   outline: var(--border);
 }
+
+#searchbar {
+  border: 0;
+  outline: 0;
+  padding: .4rem 0 .4rem 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: white;
+  width: 11rem;
+  position: relative;
+}
+
+#searchbar:placeholder-shown {
+  font-family: var(--body_font);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#search-button {
+  background-color: white;
+  outline: 0;
+  border: 0;
+  padding: .7rem 0.8rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+#search-button:hover {
+  background-color: lightgray;
+}

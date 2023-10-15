@@ -36,8 +36,6 @@ html {
 header {
   position: sticky;
   top: 0;
-  margin-left: -1rem;
-  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   font-family: var(--body_font);

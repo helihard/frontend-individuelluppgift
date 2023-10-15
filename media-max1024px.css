@@ -1,4 +1,6 @@
 @media (max-width: 1024px) {
+  
+  /* lägger sidebar ovanför huvudarea */
   #container {
     flex-direction: column-reverse;
     gap: 0;
@@ -8,16 +10,17 @@
     margin: 0 auto;
     width: 98%;
   }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
 
   /* anpassar vidd aside */
   aside {
     width: 100%;
     padding-bottom: 1rem;
   }
+}
 
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  /* sidebar öppen som default */
   input:not(:checked) + #sidebar__label + #sidebar__news {
     display: block;
   }
@@ -26,6 +29,7 @@
     display: none;
   }
 
+  /* öppna/stäng sidebar-pilar */
   input + #sidebar__label::after {
     font-size: 1.5rem;
     font-weight: bold;
@@ -43,6 +47,7 @@
     content: "\f0d7";
   }
 
+  /* färg på sidebar-label i stängt läge */
   input:checked + #sidebar__label {
     border: .1rem solid rgb(40, 42, 53);
     border-bottom-left-radius: var(--border-radius);
@@ -50,6 +55,7 @@
     background-color: rgb(40, 42, 53);
   }
 
+  /* färg på sidebar-label vid hover + öppen */
   input + #sidebar__label:hover {
     cursor: pointer;
     background-color: black;
