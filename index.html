@@ -8,140 +8,147 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="search.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
-    <link href="tester.css" rel="stylesheet">
     <link href="media-max480px.css" rel="stylesheet">
     <link href="media-max1024px.css" rel="stylesheet">
     <link href="media-larger.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
     <meta charset="utf-8">
-    <title>En nyhetssida</title>
+    <title>glitch. | down the rabbit hole</title>
   </head>
   <body>
     <div id="wrapper">
-      <div id="xxs-hero"><em id="tagline">Header med text</em></div>
+      <div id="xxs-hero"><em id="tagline">nyheter om matrisen, från matrisen</em></div>
       <header>
-        <nav style="z-index: 5000;">
-          <input type="radio" id="nav__tab1" name="navbar-tabs" checked><label for="nav__tab1" class="nav__tab" id="index-tab" style="z-index: 6000;" ><a href="index.html" id="logo">glitch.</a></label>
-          <input type="radio" id="nav__tab2" name="navbar-tabs"><label for="nav__tab2" class="nav__tab" style="z-index: 7000;"><a href="#"><h1>Länk</h1></a></label>
-          <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index: 8000;"><a href="#"><h1>Länk</h1></a></label>
-          <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index: 9000;"><a href="#"><h1>Länk</h1></a></label>
+        <nav style="z-index:5000;">
+          <input type="radio" id="nav__tab1" name="navbar-tabs" checked><label for="nav__tab1" class="nav__tab" id="index-tab" style="z-index:6000;" ><a href="index.html" id="logo">glitch.</a></label>
+          <input type="radio" id="nav__tab2" name="navbar-tabs"><label for="nav__tab2" class="nav__tab" style="z-index:7000;"><a href="#"><h1 id="headline-form">form</h1></a></label>
+          <input type="radio" id="nav__tab3" name="navbar-tabs"><label for="nav__tab3" class="nav__tab" style="z-index:8000;"><a href="#"><h1 id="headline-content">innehåll</h1></a></label>
+          <input type="radio" id="nav__tab4" name="navbar-tabs"><label for="nav__tab4" class="nav__tab" style="z-index:9000;"><a href="#"><h1 id="headline-function">funktion</h1></a></label>
           <div id="nav__searchbar-tab">
-            <search style="position: absolute;">
+            <search style="position:absolute;">
               <form action="https://www.google.com/" method="get" target="_blank">
                 <input type="search" id="searchbar" placeholder="Sök …" minlength="1">
                 <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
               </form>
             </search>
-          </div> <!-- slut id="nav__searchbar-tab"-->
+          </div> <!-- slut id="nav__searchbar-tab" -->
         </nav>
-        <div id="nav__placeholder" style="z-index: 4000;"></div>
+        <div id="nav__placeholder" style="z-index:4000;"></div>
       </header>
       <div id="container">
         <main>
           <div id="main__container">
-          <article class="span2col span2row" style="flex-direction: column;">
-            <img src="#" style="height:60%;border:1px dotted black;">
-            <div style="padding:.3rem 1rem .5rem;">
-              <em class="image-byline" style="justify-content:flex-end;">Fotografens namn</em>
+            <article class="span2col span2row" style="flex-direction: column;">
+              <img src="img/Etaoin_shrdlu.png" style="max-height:60%;object-fit:contain;border-bottom:var(--border)">
+              <em class="image-byline" style="justify-content:flex-end;margin:.2rem 1rem;">Bild: The New York Times</em>
+              <div style="padding:0 1rem;">   
+                <hgroup>
+                  <h2><em>etaoin shrdlu</em></h2>
+                  <p>Frasen som föregick undergången</p>
+                </hgroup>
+                <p class="article__newstext">En analys av &#187;matris-missen&#171; som Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn</p>
+              </div>            
+            </article>
+            <a href="#">
+              <article class="small">
+                <img src="img/xglitch.jpg" style="object-fit:fill;">
+              </article>
+            </a>
+            <article class="span2col">
+              <img src="#" style="width:10rem;border-right:var(--border)">
+              <div style="padding:0 1rem;">
+                <hgroup>
+                  <h3>Valfri nyhetsartikel</h3>
+                  <p>på 2 kolumner 1 rad</p>
+                </hgroup>
+                <p class="article__newstext">The quick brown fox jumps over the lazy dog</p>
+                <em class="image-byline" style="margin-bottom:.2rem;">Fotografens namn</em>
+              </div>
+            </article>
+            <article class="span2col" style="padding:0 1rem;">
               <hgroup>
-                <h3>Valfri nyhetsartikel</h3>
-                <p>på 2 kolumner 2 rader</p>
+                <h2 class="quoteh2"> Digna, kamrater – drama, tragiken!</h2>
+                <p class="article__newstext">Unica anagramdikter i nytolkning</p>
               </hgroup>
-              <p class="article__newstext">Flygande bäckasiner söka hwila på mjuka tuvor</p>
-            </div>
-          </article>
-          <a href="#"><article class="small"><img src="img/xglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
-          <article class="span2col">
-            <img src="#" style="width:10rem;border:1px dotted black;">
-            <div style="padding:.3rem 1rem .5rem;">
-              <hgroup>
-                <h3>Valfri nyhetsartikel</h3>
-                <p>på 2 kolumner 1 rad</p>
-              </hgroup>
-              <p class="article__newstext">The quick brown fox jumps over the lazy dog</p>
-              <em class="image-byline">Fotografens namn</em>
-            </div>
-          </article>
-          <article class="span2col" style="padding:.3rem 1rem .5rem;">
-            <hgroup>
-              <h2>Valfri nyhetsartikel</h2>
-              <p>på 2 kolumner 1 rad</p>
-            </hgroup>
-          </article>
-          <a href="#"><article class="small"><img src="img/zglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
-          <article class="span2col">
-            <div style="padding:.3rem 1rem .5rem;">
-              <hgroup>
-                <h3>Valfri nyhetsartikel</h3>
-                <p>på 2 kolumner 1 rad</p>
-              </hgroup>
-              <p class="article__newstext">The quick brown fox jumps over the lazy dog</p>
-              <em class="image-byline" style="justify-content:flex-end;">Fotografens namn</em>
-            </div>
-            <img src="#" style="width:10rem;border:1px dotted black;">
-          </article>
-          <a href="#"><article class="small"><img src="img/yglitch.jpg" style="max-width:375px;object-fit:contain;"></article></a>
-          <article class="span2col span3row" style="flex-direction:column;">
-            <div style="padding:.3rem 1rem .5rem;height:50%;">
-              <hgroup>
-                <h3>Valfri nyhetsartikel</h3>
-                <p>på 2 kolumner 3 rader</p>
-              </hgroup>
-              <p class="article__newstext">Flygande bäckasiner söka hwila på mjuka tuvor</p>
-            </div>
-            <em class="image-byline" style="margin-left:.3rem;margin-bottom:.5rem;">Fotografens namn</em>
-            <img src="#" style="height:50%;border:1px dotted black;">
-          </article>
-
-        </div>
+            </article>
+            <a href="#">
+              <article class="small">
+                <img src="img/zglitch.jpg" style="object-fit:fill;">
+              </article>
+            </a>
+            <article class="span2col">
+              <div style="padding:0 1rem;">
+                <hgroup>
+                  <h3>En skånsk kvastfening</h3>
+                  <p>Bjuvsstegocefalen på spåren</p>
+                </hgroup>
+                <p class="article__newstext">Fynd av utdöd art förbryllar forskare</p>
+              </div>
+              <img src="img/bjuvsstegocefalen2.jpg" style="max-width:15%;object-fit:fill;border-left:var(--border);margin-left:auto;">
+            </article>
+            <a href="#">
+              <article class="small">
+                <img src="img/yglitch.jpg" style="object-fit:fill;">
+              </article>
+            </a>
+            <article class="span2row" style="flex-direction:column;justify-content:space-between;">
+              <img src="img/quickbrownfox.png" style="border-bottom:var(--border)">
+              <div style="padding:0 1rem">
+                <em class="image-byline" style="margin-top:.2rem;">Bild: Robert Baden-Powell</em>
+                <hgroup>
+                  <h3>Valfri nyhetsartikel</h3>
+                  <p>på 2 rader</p>
+                </hgroup>
+                <p class="article__newstext">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+              </div>
+            </article>
+            <article class="span2col span3row" style="flex-direction:column;">
+              <div style="padding:0 1rem;height:50%">
+                <hgroup>
+                  <h3>Valfri artikel</h3>
+                  <p>på 2 kolumner 3 rader</p>
+                </hgroup>
+                <p class="article__newstext">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+              </div>
+              <em class="image-byline" style="margin-left:1rem;margin-bottom:.2rem;">Foto: Willi Heidelbach, CC BY 2.5</em>
+              <img src="img/1626px-Metal_movable_type.jpeg" style="max-height:60%;object-fit:contain;border-top:var(--border);margin-top:auto">
+            </article>
+          </div> <!-- slut id="main__container" -->
         </main>
-          <aside style="z-index: 3000;">
-            <search style="position: relative;">
-              <form action="https://www.google.com/" method="get" target="_blank">
-                <input type="search" id="searchbar" placeholder="Sök …" minlength="1">
-                <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
-              </form>
-            </search>
-            <div id="sidebar"> <!-- tidigare style="z-index: 3000;" -->
-              <!--<div id="aside_content"> -->
-                <input type="checkbox" id="sidebar__title">
-                <label for="sidebar__title" id="sidebar__label">Senaste pangram</label>
-                <ul id="sidebar__news">
-                  <li><a href="#">Flygande bäckasiner söka hwila på mjuka tuvor</a></li>
-                  <li><a href="#">The quick brown fox jumps over the lazy dog</a></li>
-                  <li><a href="#">Waltz, bad nymph, for quick jigs vex</a></li>
-                  <li><a href="#">Sphinx of black quartz, judge my vow</a></li>
-                  <li><a href="#">How vexingly quick daft zebras jump!</a></li>
-                </ul>
-              <!--</div> slut id="aside-content"-->
-            </div> <!-- slut id="sidebar"-->
-          </aside>
-          
-
-          <!--<aside style="z-index: 3000;">
-            <div id="aside_content">
-              <input type="checkbox" id="aside_title">
-              <label for="aside_title" id="sidebar_label">Sidebar sidebar sidebar sidebar sidebar</label>
-              <ul id="sidebar_news">
-                <li><a href="#">Valfri artikel</a></li>
-                <li><a href="#">Valfri artikel</a></li>
-                <li><a href="#">Valfri artikel</a></li>
-                <li><a href="#">Valfri artikel</a></li>
-              </ul>
-            </div>slut id="aside-content"
-          </aside>-->
+        <aside style="z-index: 3000;">
+          <search style="position: relative;">
+            <form action="https://www.google.com/" method="get" target="_blank">
+              <input type="search" id="searchbar" placeholder="Sök …" minlength="1">
+              <button id="search-button"><span class="fa-solid fa-magnifying-glass"></span></button>
+            </form>
+          </search>
+          <div id="sidebar">
+            <input type="checkbox" id="sidebar__title">
+            <label for="sidebar__title" id="sidebar__label">Senaste pangram</label>
+            <ul id="sidebar__news">
+              <li><a href="#">Flygande bäckasiner söka hwila på mjuka tuvor</a></li>
+              <li><a href="#">The quick brown fox jumps over the lazy dog</a></li>
+              <li><a href="#">Waltz, bad nymph, for quick jigs vex</a></li>
+              <li><a href="#">Sphinx of black quartz, judge my vow</a></li>
+              <li><a href="#">How vexingly quick daft zebras jump!</a></li>
+            </ul>
+          </div> <!-- slut id="sidebar"-->
+        </aside>
       </div> <!-- slut id="container" -->
       <footer>
         <div>&copy; glitch. 2023</div>
         <div>Ansvarig utgivare: Heli Hård</div>
-        <div style="display:grid;grid-template-columns: repeat(3, 1fr);width:100%;align-items:center;padding:.5rem 0 0;">
-          <a href="mailto:heli.hard@studerande.plushogskolan.se"><span id="email"><i class="fa-solid fa-envelope" title="Email"></i>
-            <i class="fa-solid fa-envelope-open" title="Email"></i></span>
+        <div style="display:grid;grid-template-columns:repeat(3, 1fr);width:100%;align-items:center;padding:.5rem 0 0;">
+          <a href="mailto:heli.hard@studerande.plushogskolan.se">
+            <span id="email">
+              <i class="fa-solid fa-envelope" title="Email"></i>
+              <i class="fa-solid fa-envelope-open" title="Email"></i>
+            </span>
           </a>
           <div id="footer__social-media">
             <a href="https://www.facebook.com/" target="_blank">
